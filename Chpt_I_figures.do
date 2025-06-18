@@ -492,7 +492,7 @@ kdensity obs_m_all [fw=fac] if  migest==1 , generate(kxrt2 kert2) k(epan2) bw(1)
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 )
 
-line kdenrest1_rt kxrt2, xline( 5.390254  ) yline(0) ytitle("") title("K-densities difference") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\all_gen_obs_diff.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -510,7 +510,7 @@ kdensity obs_m_all_2007 [fw=fac] if  migest==1  & year==2007, generate(kxrt2 ker
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 )
 
-line kdenrest1_rt kxrt2, xline(  6.704783  ) yline(0) ytitle("") title("K-densities difference 2007") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2007") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\all_gen_obs_diff_2007.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -528,7 +528,7 @@ kdensity obs_m_all_2012 [fw=fac] if  migest==1  & year==2012, generate(kxrt2 ker
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 )
 
-line kdenrest1_rt kxrt2, xline( 2.962516 ) yline(0) ytitle("") title("K-densities difference 2012") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2012") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\all_gen_obs_diff_2012.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -546,7 +546,7 @@ kdensity obs_m_all_2017 [fw=fac] if  migest==1  & year==2017, generate(kxrt2 ker
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 )
 
-line kdenrest1_rt kxrt2, xline(  5.126962 ) yline(0) ytitle("") title("K-densities difference 2017") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2017") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\all_gen_obs_diff_2017.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -577,7 +577,7 @@ kdensity ra_obs_m_all [fw=fac] if  migest==1 & risk_averse==1 , generate(kxrt2 k
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(   8.653248   ) yline(0) ytitle("") title("K-densities difference (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RA_gen_obs_diff.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -598,7 +598,7 @@ kdensity rt_obs_m_all [fw=fac] if  migest==1 & risk_averse==0 , generate(kxrt2 k
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 )
 
-line kdenrest1_rt kxrt2, xline( 1.003819  ) yline(0) ytitle("") title("K-densities difference (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2, ytitle("") title("K-densities difference (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RT_gen_obs_diff.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -628,7 +628,7 @@ kdensity ra_obs_m_all_2007 [fw=fac] if  migest==1 & risk_averse==1 & year==2007 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(   8.901867   ) yline(0) ytitle("") title("K-densities difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RA_gen_obs_diff_2007.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -647,7 +647,7 @@ kdensity ra_obs_m_all_2012 [fw=fac] if  migest==1 & risk_averse==1 & year==2012 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(    8.587042   ) yline(0) ytitle("") title("K-densities difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RA_gen_obs_diff_2012.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -666,7 +666,7 @@ kdensity ra_obs_m_all_2017 [fw=fac] if  migest==1 & risk_averse==1 & year==2017 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(   8.729476   ) yline(0) ytitle("") title("K-densities difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RA_gen_obs_diff_2017.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -698,7 +698,7 @@ kdensity rt_obs_m_all_2007 [fw=fac] if  migest==1 & risk_averse==0 & year==2007 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(    1.566462  ) yline(0) ytitle("") title("K-densities difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RT_gen_obs_diff_2007.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -717,7 +717,7 @@ kdensity rt_obs_m_all_2012 [fw=fac] if  migest==1 & risk_averse==0 & year==2012 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(     1.206456    ) yline(0) ytitle("") title("K-densities difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RT_gen_obs_diff_2012.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -736,7 +736,7 @@ kdensity rt_obs_m_all_2017 [fw=fac] if  migest==1 & risk_averse==0 & year==2017 
 gen kdenrest1_rt= kert2 - kert1
 tabstat  kxrt2 , stats(p50 mean )
 
-line kdenrest1_rt kxrt2, xline(   1.078684   ) yline(0) ytitle("") title("K-densities difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("K-densities difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\RT_gen_obs_diff_2017.png, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -819,7 +819,7 @@ kdensity obs_2007migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2007, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline(1.58209  ) yline(0) ytitle("") title("Observed skills difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2, ytitle("") title("Observed skills difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_obs_diff_2007.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -831,7 +831,7 @@ kdensity obs_2012migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2012, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline(1.541372 ) yline(0) ytitle("") title(" Observed skills difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title(" Observed skills difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_obs_diff_2012.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -843,7 +843,7 @@ kdensity obs_2017migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2017, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline( 1.188078  ) yline(0) ytitle("") title("Observed skills difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("Observed skills difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_obs_diff_2017.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -856,7 +856,7 @@ kdensity obs_2007migra [fw=fac] if  migest==1 & risk_averse==1 & year==2007, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline( 8.917426 ) yline(0) ytitle("") title(" Observed skills difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title(" Observed skills difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_obs_diff_2007.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -868,7 +868,7 @@ kdensity obs_2012migra [fw=fac] if  migest==1 & risk_averse==1 & year==2012, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline(8.803228 ) yline(0) ytitle("") title("Observed skills difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("Observed skills difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_obs_diff_2012.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -880,7 +880,7 @@ kdensity obs_2017migra [fw=fac] if  migest==1 & risk_averse==1 & year==2017, gen
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline( 8.719265  ) yline(0) ytitle("") title("Observed skills difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("Observed skills difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_obs_diff_2017.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -898,7 +898,7 @@ kdensity unobs_2007migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2007, g
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2 , xline(2.542654 ) yline(0) ytitle("") title("Unobserved skills difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2 ,  ytitle("") title("Unobserved skills difference 2007 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_unobs_diff_2007.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -910,7 +910,7 @@ kdensity unobs_2012migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2012, g
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2 , xline( 2.143716   ) yline(0) ytitle("") title(" Unobserved skills difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2 ,  ytitle("") title(" Unobserved skills difference 2012 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_unobs_diff_2012.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -922,7 +922,7 @@ kdensity unobs_2017migrt [fw=fac] if  migest==1 & risk_averse==0 & year==2017, g
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2, xline( 2.24325 ) yline(0) ytitle("") title("Unobserved skills difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2,  ytitle("") title("Unobserved skills difference 2017 (RT)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\rt_unobs_diff_2017.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -935,7 +935,7 @@ kdensity unobs_2007migra [fw=fac] if  migest==1 & risk_averse==1 & year==2007 , 
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2 , xline(-.2278547  ) yline(0) ytitle("") title(" Unobserved skills difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2 ,  ytitle("") title(" Unobserved skills difference 2007 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_unobs_diff_2007.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -947,7 +947,7 @@ kdensity unobs_2012migra [fw=fac] if  migest==1 & risk_averse==1 & year==2012, g
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2 , xline(.199478 ) yline(0) ytitle("") title("Unobserved skills difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2 ,  ytitle("") title("Unobserved skills difference 2012 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_unobs_diff_2012.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
@@ -959,7 +959,7 @@ kdensity unobs_2017migra [fw=fac] if  migest==1 & risk_averse==1 & year==2017, g
 
 gen kdenrest1_rt= kert2 - kert1
 tabstat kdenrest1_rt kxrt2 kert1, stats(p50 )
-line kdenrest1_rt kxrt2 , xline( .1559719  ) yline(0) ytitle("") title("Unobserved skills difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
+line kdenrest1_rt kxrt2 ,  ytitle("") title("Unobserved skills difference 2017 (RA)") graphregion(color(white)) bgcolor(white)
 
 graph export D:\doctorado\respuesta_tesis\chpt_I\graphs\ra_unobs_diff_2017.jpg, replace
 drop kxrt1 kert1 kxrt2 kert2 kdenrest1_rt
